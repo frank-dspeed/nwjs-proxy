@@ -1,0 +1,38 @@
+{
+  "name": "nwjs-proxy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "node-main": "main.js",
+  "chromium-args": "--mixed-context",
+  "dom_storage_quota": 5,
+  "window": {
+    "show": true,
+    "frame": true,
+    "toolbar": true,
+    "always_on_top": true,
+    "fullscreen": false,
+    "show_in_taskbar": true,
+    "transparent": false,
+    "icon": "app.icns",
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw --remote-debugging-port=9222",
+    "build": "node deploy.js",
+    "testing": "echo hello"
+  },
+  "author": "",
+  "license": "BSL",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
